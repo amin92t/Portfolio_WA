@@ -1,0 +1,54 @@
+@import url(reset.css);
+@import url(fonts.css);
+@import url(grid.css);
+
+:root {
+    --primary-color: #0CBFAE;
+    --secondary-color: #F57F17;
+    --first-shadow-color: #60E9FF;
+    --dark-text-color: #333333;
+    --light-text-color: #95A5C6;
+    --default-border-radius: 2rem;
+    --light-bg-color: #FFFFFF;
+    --dark-bg-color: #161D26;
+    --secondary-bg-color: #1F2935;
+}
+
+/* =====================================
+  General style
+========================================*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* =====================================
+  Helper Class
+========================================*/
+
+
+/* =====================================
+  Styles
+========================================*/
