@@ -3,15 +3,16 @@
 @import url(grid.css);
 
 :root {
-    --primary-color: #0CBFAE;
-    --secondary-color: #F57F17;
-    --first-shadow-color: #60E9FF;
-    --dark-text-color: #333333;
-    --light-text-color: #95A5C6;
-    --default-border-radius: 2rem;
-    --light-bg-color: #FFFFFF;
-    --dark-bg-color: #161D26;
-    --secondary-bg-color: #1F2935;
+  --primary-color: #0CBFAE;
+  --secondary-color: #F57F17;
+  --first-shadow-color: #60E9FF;
+  --dark-text-color: #333333;
+  --light-text-color: #95A5C6;
+  --default-border-radius: 2rem;
+  --light-bg-color: #FFFFFF;
+  --dark-bg-color: #161D26;
+  --secondary-bg-color: #1F2935;
+  --transition-default: all 0.3s ease-in;
 }
 
 /* =====================================
@@ -19,36 +20,79 @@
 ========================================*/
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 *,
 *::after,
 *::before {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-size: 1.6rem;
-    line-height: 1.4;
+  font-family: "Poppins-Regular";
+  font-size: 1.6rem;
+  line-height: 1.4;
+  overflow-x: hidden;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 /* =====================================
   Helper Class
 ========================================*/
+.flx {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
 
 
 /* =====================================
-  Styles
+  App Styles - Navigation
 ========================================*/
+
+.header {
+  box-shadow: 0 0 10px 0 var(--first-shadow-color);
+}
+
+.nav {
+  justify-content: space-between;
+  position: relative;
+
+}
+
+.menu__item {
+  margin-right: 2rem;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__link--active {
+  color: var(--primary-color);
+}
+
+.menu__link {
+  transition: var(--transition-default);
+}
+
+.menu__link:hover {
+  color: var(--primary-color);
+}
+
+.nav__btn {
+  display: none;
+}
