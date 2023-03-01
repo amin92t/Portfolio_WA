@@ -11,7 +11,7 @@
   --default-border-radius: 2rem;
   --light-bg-color: #FFFFFF;
   --dark-bg-color: #161D26;
-  --secondary-bg-color: #1F2935;
+  --secondary-bg-color: rgb(31, 41, 53);
   --transition-default: all 0.3s ease-in;
 }
 
@@ -58,19 +58,74 @@ ul {
   align-items: center;
 }
 
+/* justify-content-space-between */
+.jus-sbt {
+  justify-content: space-between;
+}
+
+.jus-cen {
+  justify-content: center;
+}
+
+/* h1 title */
+.h1t {
+  font-family: "Poppins-Bold";
+  font-size: 4rem;
+  color: var(--primary-color);
+}
+
+/* text dedault style */
+.tds {
+  font-family: "Poppins-Regular";
+  font-size: 1.4rem;
+  color: var(--light-text-color);
+}
+
+.wrapper-default-btns {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+.btn {
+  background: #0CBFAE;
+  width: 20rem;
+  height: 5rem;
+  border-radius: 4rem;
+  color: var(--light-bg-color);
+}
+
+.btn--orange {
+  background-color: var(--secondary-color);
+}
+
+
 
 /* =====================================
   App Styles - Navigation
 ========================================*/
 
+.home {
+  height: 54rem;
+  position: relative;
+  background-image: url(../images/shapes/header-shape.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin-bottom: 3rem;
+}
+
 .header {
   box-shadow: 0 0 10px 0 var(--first-shadow-color);
+  z-index: 100;
 }
 
 .nav {
   justify-content: space-between;
   position: relative;
-
+  z-index: 1000;
 }
 
 .menu__item {
@@ -95,4 +150,44 @@ ul {
 
 .nav__btn {
   display: none;
+}
+
+/* =====================================
+  Home section
+========================================*/
+
+.home {
+  margin-top: 10rem;
+}
+
+.home__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.home__name {
+  font-family: "Poppins-SemiBold";
+  font-size: 2.2rem;
+  color: var(--primary-color);
+}
+
+.home__name span {
+  color: var(--secondary-color);
+}
+
+.home__img {
+  background-image: url(../images/header-avatar.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 30rem;
+  width: 30rem;
+  border-radius: 50%;
+  border: 10px solid var(--light-bg-color);
+  box-shadow: 0 0 10px 0 var(--primary-color);
+}
+
+.home__banner {
+  margin-left: 10rem;
 }

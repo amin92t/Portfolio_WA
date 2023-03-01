@@ -3,6 +3,11 @@
 
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
+
+    /* =====================================
+  Menu
+========================================*/
+
     .menu {
         position: absolute;
         top: 100%;
@@ -15,6 +20,7 @@
         border: 1px solid var(--primary-color);
         border-radius: 1rem;
         box-shadow: 0 0 10px 0 var(--primary-color);
+        background-color: var(--light-bg-color);
         display: none;
         transition: var(--transition-default);
     }
@@ -32,6 +38,9 @@
         margin-bottom: 1rem;
     }
 
+    /* =====================================
+  Nav button
+========================================*/
     .nav__btn {
         position: relative;
         cursor: pointer;
@@ -83,10 +92,47 @@
         top: -1.2rem;
     }
 
+    .home {
+        height: 68rem;
+    }
+
+    .home .row {
+        flex-direction: column-reverse;
+    }
+
+    .home__content {
+        align-items: center;
+    }
+
+    .home__banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .wrapper-default-btns {
+        justify-content: center;
+    }
 }
 
 /* Large devices (laptops/desktops, 960px and down) */
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 992px) {
+    .home__img {
+        width: 24rem;
+        height: 24rem;
+    }
+
+    .home__title {
+        font-size: 3.2rem;
+    }
+
+    .btn {
+        width: 14rem;
+        height: 4rem;
+        font-size: 1.2rem;
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and down) */
 @media only screen and (max-width: 1200px) {}
