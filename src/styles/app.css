@@ -74,6 +74,12 @@ ul {
   color: var(--primary-color);
 }
 
+.h2t {
+  font-family: "Poppins-Bold";
+  font-size: 3.6rem;
+  color: var(--primary-color);
+}
+
 /* text dedault style */
 .tds {
   font-family: "Poppins-Regular";
@@ -190,4 +196,120 @@ ul {
 
 .home__banner {
   margin-left: 10rem;
+}
+
+/* =====================================
+  About section
+========================================*/
+
+.about {
+  margin-top: 5rem;
+}
+
+.general-head-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.general-head-section__title {
+  margin-bottom: 1.4rem;
+}
+
+.general-head-section__caption {
+  font-family: "Poppins-Regular";
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.general-head-section--line {
+  background-color: var(--primary-color);
+  width: 20rem;
+  height: 0.3rem;
+  position: relative;
+}
+
+.general-head-section--line::before {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  background-color: var(--primary-color);
+  width: 4rem;
+  height: 0.6rem;
+  border-radius: 2rem;
+  transform: translateX(-50%);
+}
+
+.about__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 10px 0 var(--primary-color);
+  height: 54rem;
+  padding: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.about__banner {
+  flex-grow: 1;
+  flex-basis: 50%;
+  height: 100%;
+
+}
+
+.about__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__description {
+  flex-basis: 50%;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.about__title {
+  font-family: "Poppins-SemiBold";
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.about__caption {
+  font-family: "Poppins-Regular";
+  font-size: 1.4rem;
+  color: var(--light-text-color);
+  margin-bottom: 5rem;
+}
+
+.about__title-features {
+  font-family: "Poppins-SemiBold";
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.about__feature {
+  font-family: "Poppins-Regular";
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.about__feature::before {
+  content: "";
+  background-color: var(--secondary-color);
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
 }

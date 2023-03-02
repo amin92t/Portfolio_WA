@@ -1,5 +1,52 @@
-/* Small devices (portrait tablets and large phones, 576px and down) */
-@media only screen and (max-width: 576px) {}
+/* Extra large devices (large laptops and desktops, 1200px and down) */
+@media only screen and (max-width: 1200px) {
+
+    /* =====================================
+  About
+========================================*/
+    .about__description {
+        padding-top: 10rem;
+    }
+
+    .about__description .wrapper-default-btns__btn {
+        margin-bottom: 8rem;
+        width: 18rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 960px and down) */
+@media only screen and (max-width: 992px) {
+
+    /* =====================================
+  Home
+========================================*/
+    .home__img {
+        width: 24rem;
+        height: 24rem;
+    }
+
+    .home__title {
+        font-size: 3.2rem;
+    }
+
+    .btn {
+        width: 14rem;
+        height: 4rem;
+        font-size: 1.2rem;
+    }
+
+    /* =====================================
+  about
+========================================*/
+    .about__content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .about__description {
+        padding-top: 3rem;
+    }
+}
 
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
@@ -92,6 +139,10 @@
         top: -1.2rem;
     }
 
+    /* =====================================
+  Home
+========================================*/
+
     .home {
         height: 68rem;
     }
@@ -116,23 +167,17 @@
     }
 }
 
-/* Large devices (laptops/desktops, 960px and down) */
-@media only screen and (max-width: 992px) {
-    .home__img {
-        width: 24rem;
-        height: 24rem;
+
+
+
+/* Small devices (portrait tablets and large phones, 576px and down) */
+@media only screen and (max-width: 576px) {
+
+    .about__description .wrapper-default-btns__btn {
+        margin-bottom: 0;
     }
 
-    .home__title {
-        font-size: 3.2rem;
-    }
-
-    .btn {
-        width: 14rem;
-        height: 4rem;
-        font-size: 1.2rem;
+    .about__description .wrapper-default-btns__btn:last-child {
+        margin-bottom: 2rem;
     }
 }
-
-/* Extra large devices (large laptops and desktops, 1200px and down) */
-@media only screen and (max-width: 1200px) {}
