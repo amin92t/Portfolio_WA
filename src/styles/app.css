@@ -313,3 +313,73 @@ ul {
   position: absolute;
   left: 0;
 }
+
+/* =====================================
+  Services section
+========================================*/
+
+.services {
+  margin: 4rem 0;
+}
+
+.service--purple {
+  background-color: #8540FF;
+}
+
+.service--yellow {
+  background-color: #FFC50C;
+}
+
+.service--pink {
+  background-color: #EC407A;
+}
+
+.service--orange {
+  background-color: #FF6331;
+}
+
+.service--blue {
+  background-color: #13B6FF;
+}
+
+.service--green {
+  background-color: #49AF46;
+}
+
+.service {
+  padding: 6rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.service__icon-box {
+  margin-bottom: 2rem;
+}
+
+
+.service__title {
+  font-family: "Poppins-Bold";
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--light-bg-color);
+}
+
+.service__caption {
+  font-family: "Poppins-Regular";
+  font-size: 1.3rem;
+  color: var(--light-bg-color);
+  text-align: center;
+  max-width: 23rem;
+}
+
+.service__shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}

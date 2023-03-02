@@ -165,6 +165,20 @@
     .wrapper-default-btns {
         justify-content: center;
     }
+
+    /* =====================================
+  Services
+========================================*/
+
+    .service__caption {
+        max-width: 100%;
+    }
+
+
+
+    .service__shape {
+        bottom: -5rem;
+    }
 }
 
 
@@ -180,4 +194,5 @@
     .about__description .wrapper-default-btns__btn:last-child {
         margin-bottom: 2rem;
     }
+
 }
