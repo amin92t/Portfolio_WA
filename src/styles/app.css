@@ -383,3 +383,165 @@ ul {
   width: 100%;
   z-index: -1;
 }
+
+/* =====================================
+  Resume section
+========================================*/
+
+.resume {
+  margin-top: 20rem;
+  box-shadow: 0 0 10px 0 var(--primary-color);
+  transform: skewY(-10deg);
+  padding: 10rem 0;
+}
+
+.resume .container {
+  transform: skewY(10deg);
+}
+
+.resume__list {
+  box-shadow: 0 0 10px var(--primary-color);
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+
+.resume__list::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: var(--primary-color);
+  width: 4rem;
+  height: 100%;
+  z-index: -1;
+}
+
+.resume__list-item {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  width: 28rem;
+}
+
+.resume__list-item--active {
+  color: var(--light-bg-color);
+}
+
+.resume__list-item::before {
+  content: "";
+  background-color: var(--primary-color);
+  position: absolute;
+  width: 5.4rem;
+  border-radius: 2rem;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: all 0.3s ease-in;
+}
+
+.resume__list-item--active::before {
+  width: 26rem;
+}
+
+.resume__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.resume__list-icon {
+  height: 2rem;
+  width: 2rem;
+  margin: 1rem;
+}
+
+.resume__list-text {
+  padding-left: 2rem;
+}
+
+.resume__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  opacity: 0;
+  overflow: hidden;
+  display: none;
+  position: relative;
+  height: auto;
+  max-height: 40rem;
+  padding-left: 4rem;
+}
+
+.resume__content::before {
+  content: "";
+  background-color: var(--primary-color);
+  position: absolute;
+  width: 0.2rem;
+  height: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.resume__content--show {
+  opacity: 1;
+  overflow: visible;
+  display: block;
+}
+
+.resume__content-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.resume__content-item::before {
+  position: absolute;
+  content: "";
+  background-color: var(--primary-color);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  left: -4.8rem;
+  top: 5px;
+  bottom: 0;
+}
+
+.resume__content-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.resume__content-title {
+  font-family: "Poppins-SemiBold";
+  font-size: 1.6rem;
+  color: var(--secondary-color);
+}
+
+.resume__content-date {
+  background-color: var(--secondary-color);
+  color: var(--light-bg-color);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+}
+
+.resume__content-subtitle {
+  font-family: "Poppins-SemiBold";
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.resume__content-caption {
+  font-family: "Poppins-Regular";
+  font-size: 1.2rem;
+}

@@ -179,6 +179,44 @@
     .service__shape {
         bottom: -5rem;
     }
+
+
+    /* =====================================
+        Resume
+    ========================================*/
+
+    .resume__list::before,
+    .resume__list-item::before {
+        content: none;
+    }
+
+    .resume__list-icon {
+        display: none;
+    }
+
+    .resume__list {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 20rem;
+    }
+
+    .resume__list-item {
+        width: auto;
+        padding: 1rem 3rem;
+
+    }
+
+    .resume__list-item--active {
+        color: var(--light-bg-color);
+        background-color: var(--primary-color);
+        border-radius: 2rem;
+    }
+
+    .resume__list-text {
+        padding: 0;
+    }
 }
 
 
