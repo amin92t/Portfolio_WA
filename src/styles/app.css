@@ -475,8 +475,7 @@ ul {
   overflow: hidden;
   display: none;
   position: relative;
-  height: auto;
-  max-height: 40rem;
+  height: 40rem;
   padding-left: 4rem;
 }
 
@@ -544,4 +543,68 @@ ul {
 .resume__content-caption {
   font-family: "Poppins-Regular";
   font-size: 1.2rem;
+}
+
+
+/* =====================================
+  Portfolio
+========================================*/
+
+.portfolio {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.portfolio__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.portfolio__list-item {
+  padding: 1rem 3rem;
+  font-family: "Poppins-Regular";
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.portfolio__list-item--active {
+  background-color: var(--primary-color);
+  color: var(--light-bg-color);
+}
+
+.portfolio__slider {
+  opacity: 0;
+  display: none;
+  overflow: hidden;
+  height: 0;
+}
+
+.portfolio__slider--show {
+  opacity: 1;
+  display: block;
+  overflow: visible;
+  height: auto;
+}
+
+.swiper-wrapper {
+  margin-bottom: 4rem !important;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--light-bg-color) !important;
+  border: 2px solid var(--light-text-color) !important;
+  opacity: 1 !important;
+  height: 1rem !important;
+  width: 1rem !important;
+}
+
+.swiper-pagination-bullet-active {
+  border: 2px solid var(--primary-color) !important;
 }

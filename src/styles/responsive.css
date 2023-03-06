@@ -46,6 +46,10 @@
     .about__description {
         padding-top: 3rem;
     }
+
+    .portfolio__list {
+        flex-wrap: wrap;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
@@ -216,6 +220,10 @@
 
     .resume__list-text {
         padding: 0;
+    }
+
+    .resume__content {
+        height: auto;
     }
 }
 
