@@ -5,6 +5,8 @@ const coverbg = document.querySelector('.cover')
 const resumeListItems = document.querySelectorAll('.resume__list-item')
 const portfolioListItems = document.querySelectorAll('.portfolio__list-item')
 
+const menuItems = document.querySelectorAll(".menu__item")
+const sections = document.querySelectorAll("main > section")
 
 navBtn.addEventListener('click', () => {
     navBtn.classList.toggle('nav__btn--active')
@@ -18,17 +20,60 @@ navBtn.addEventListener('click', () => {
 function tabChanges(listItems, showClass, activeClass) {
     listItems.forEach(item => {
         item.addEventListener('click', () => {
-            document.querySelector(`.${showClass}`).classList.remove(showClass)
-            document.querySelector(`.${activeClass}`).classList.remove(activeClass)
+            removeClass(showClass)
+            removeClass(activeClass)
             item.classList.add(activeClass)
-            let resumeContentId = item.getAttribute("data-content-id")
-            document.querySelector(resumeContentId).classList.add(showClass)
+            let ContentId = item.getAttribute("data-content-id")
+            document.querySelector(ContentId).classList.add(showClass)
         })
     })
 }
 
+function removeClass(className) {
+    document.querySelector(`.${className}`).classList.remove(className)
+}
+
 tabChanges(resumeListItems, "resume__content--show", "resume__list-item--active")
 tabChanges(portfolioListItems, "portfolio__slider--show", "portfolio__list-item--active")
+
+
+menuItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault()
+        removeClass("menu__item--active")
+        item.classList.add("menu__item--active")
+        let sectionClass = item.getAttribute("data-section")
+        let offsetTopY = document.querySelector(`.${sectionClass}`).offsetTop
+        window.scrollTo({
+            top: offsetTopY,
+            behavior: "smooth"
+        })
+    })
+})
+
+
+const observer = new IntersectionObserver(observerHandler, {
+    threshold: 0.5
+})
+
+function observerHandler(allsection) {
+    // console.log(section);
+    // console.log(allsection);
+    allsection.map(section => {
+        let sectionClassName = section.target.className
+        if (section.isIntersecting) {
+            document.querySelector(`.menu__item[data-section=${sectionClassName}]`).classList.add("menu__item--active")
+        } else {
+            document.querySelector(`.menu__item[data-section=${sectionClassName}]`).classList.remove("menu__item--active")
+        }
+    })
+}
+
+sections.forEach(section => {
+    observer.observe(section)
+})
+
+
 
 
 // resumeListItems.forEach(item => {

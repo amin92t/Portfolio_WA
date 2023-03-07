@@ -126,6 +126,11 @@ ul {
 .header {
   box-shadow: 0 0 10px 0 var(--first-shadow-color);
   z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--light-bg-color);
 }
 
 .nav {
@@ -142,7 +147,7 @@ ul {
   margin-right: 0;
 }
 
-.menu__link--active {
+.menu__item--active a {
   color: var(--primary-color);
 }
 
