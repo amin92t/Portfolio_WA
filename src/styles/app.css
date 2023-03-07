@@ -644,7 +644,6 @@ ul {
   left: 15rem;
 }
 
-.contactus__icon {}
 
 .contactus__content {
   background-color: var(--light-bg-color);
@@ -698,4 +697,46 @@ ul {
   font-family: "Poppins-SemiBold";
   font-size: 1.4rem;
   cursor: pointer;
+}
+
+
+/* =====================================
+  Footer
+========================================*/
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.footer__copyright {
+  font-family: "Poppins-SemiBold";
+  font-size: 1.4rem;
+}
+
+.footer__socialmedia {
+  display: flex;
+}
+
+.footer__socialmedia-link {
+  margin-right: 1rem;
+  background-color: var(--dark-bg-color);
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__socialmedia-link:hover {
+  background-color: var(--primary-color);
+}
+
+.footer__socialmedia-icon {
+  width: 3rem;
+  fill: var(--light-bg-color);
 }

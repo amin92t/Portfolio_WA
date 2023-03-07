@@ -256,4 +256,12 @@
         margin-bottom: 2rem;
     }
 
+    .footer__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__copyright {
+        margin-bottom: 2rem;
+    }
 }
