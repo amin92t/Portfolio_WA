@@ -30,6 +30,7 @@ function tabChanges(listItems, showClass, activeClass) {
 tabChanges(resumeListItems, "resume__content--show", "resume__list-item--active")
 tabChanges(portfolioListItems, "portfolio__slider--show", "portfolio__list-item--active")
 
+
 // resumeListItems.forEach(item => {
 //     item.addEventListener('click', () => {
 //         document.querySelector('.resume__content--show').classList.remove('resume__content--show')

@@ -225,6 +225,21 @@
     .resume__content {
         height: auto;
     }
+
+
+    /* =====================================
+        Contact us
+    ========================================*/
+    .shape__wrapper {
+        display: none;
+        overflow: hidden;
+        opacity: 0;
+    }
+
+    .contactus__content {
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 

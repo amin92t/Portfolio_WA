@@ -608,3 +608,94 @@ ul {
 .swiper-pagination-bullet-active {
   border: 2px solid var(--primary-color) !important;
 }
+
+
+/* =====================================
+  Contact us
+========================================*/
+
+.contact_wrapper {
+  background: url(../images/map.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60rem;
+
+}
+
+.contact_wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shape__wrapper {
+  position: relative;
+}
+
+.contactus__shape {
+  background-color: var(--light-bg-color);
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 12rem;
+  left: 15rem;
+}
+
+.contactus__icon {}
+
+.contactus__content {
+  background-color: var(--light-bg-color);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px var(--first-shadow-color);
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  padding: 2rem;
+  height: auto;
+  margin-top: 4rem;
+  margin-right: 4rem;
+}
+
+.contactus__title {
+  font-family: "Poppins-Bold";
+  font-size: 2.6rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.contactus__form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.contactus__form-input {
+  outline: none;
+  border: none;
+  box-shadow: 0 0 10px var(--first-shadow-color);
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-family: "Poppins-Regular";
+  font-size: 1.4rem;
+}
+
+.contactus__form-textarea {
+  resize: none;
+}
+
+.contactus__form-btn {
+  background-color: var(--primary-color);
+  padding: 1rem 0;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  color: var(--light-bg-color);
+  font-family: "Poppins-SemiBold";
+  font-size: 1.4rem;
+  cursor: pointer;
+}
